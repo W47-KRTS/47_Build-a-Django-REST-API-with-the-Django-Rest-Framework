@@ -9,7 +9,9 @@ endpoint = "http://localhost:8000/api/" # "http://127.0.0.1:8000/"
 #use the api that is in this library
 # API -> Method (function built into it)   
 
-get_response = requests.get(endpoint, params={"abc": 123}, json={"query": "Hello, brother!"}) # HTTP Request
+get_response = requests.get(endpoint, json={"Hello, brother!": 47}) # HTTP Request
+
+# print(get_response.headers)
 # print(get_response.text)  #print raw text response
 # print(get_response.status_code)
 
